@@ -38,10 +38,10 @@ monthnum= datetime.today().month
 thismonth=month_name[monthnum]
 thisday=datetime.today().day
 
-name=input("What is your name?")
-month=str(input("What month were you born in?"))
-year=int(input("What year were you born?"))
-day=int(input("What day were you born?"))
+name=input("Hello, what is your name? ")
+month=str(input("Hi "+ str(name)+ ", what was the name of the month you were born in? "))
+year=int(input("And what year were you born in, "+ str(name)+"? "))
+day=int(input("And the day? "))
 
 if month=="December" or month=="January" or month=="February":
     season="winter"
