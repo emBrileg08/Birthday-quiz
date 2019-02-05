@@ -52,13 +52,19 @@ elif month=="June" or month=="July" or month=="August":
 else:
     season="fall"
     
-if year<= 1980:
+if year< 1980:
     age= "stone age"
+elif year>=2000:
+    age="two thousands"
+elif year>=1990:
+    age="nineties"
+else:
+    age="eighties"
 
-if month=="October" and day=="31":
+if month=="October" and day==31:
     print("You were born on Halloween!")
 elif month==thismonth and day==thisday:
    print("Happy birthday!")
 else:
-    print(str(name)+", you are a "+ season + " baby of the ")
+    print(str(name)+", you are a "+ season + " baby of the "+ age + ".")
     
